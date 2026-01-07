@@ -1,6 +1,6 @@
 # Universal Manipulation Interface
 
-> **Platform Support**: This project is primarily developed and tested on **Ubuntu 22.04**. Community support for **macOS (Intel)** is available for development and training. See [Installation](#%EF%B8%8F-installation) section below for platform-specific instructions.
+> **Platform Support**: This project is primarily developed and tested on **Ubuntu 22.04**. Community support for **macOS (Intel)** is available for development and training. See [Installation](#installation) section below for platform-specific instructions.
 
 [[Project page]](https://umi-gripper.github.io/)
 [[Paper]](https://umi-gripper.github.io/#paper)

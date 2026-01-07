@@ -228,7 +228,7 @@ For real-world deployment, we recommend:
 
 ## 🔗 Additional Resources
 
-- [Main README](README.md) - General UMI documentation
+- [Main README](../README.md) - General UMI documentation
 - [Hardware Guide](https://docs.google.com/document/d/1TPYwV9sNVPAi0ZlAupDMkXZ4CA1hsZx7YDMSmcEy6EU/edit?usp=sharing) - Hardware setup instructions
 - [SLAM Repository](https://github.com/cheng-chi/ORB_SLAM3) - ORB-SLAM3 fork for UMI
 - [SLAM Docker](https://hub.docker.com/r/chicheng/orb_slam3) - Docker image for SLAM
@@ -250,4 +250,4 @@ If you find ways to improve macOS support or work around limitations, please con
 
 ## ⚠️ Disclaimer
 
-This macOS installation guide is provided for development and testing purposes. For production deployment and real-time robot control, we strongly recommend using Ubuntu 22.04 Linux as documented in the main [README](README.md).
+This macOS installation guide is provided for development and testing purposes. For production deployment and real-time robot control, we strongly recommend using Ubuntu 22.04 Linux as documented in the main [README](../README.md).
