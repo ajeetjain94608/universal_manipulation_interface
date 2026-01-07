@@ -113,8 +113,20 @@ If MuJoCo import fails, you may need to install MuJoCo separately. See [MuJoCo d
 The SLAM pipeline should work on macOS for processing pre-recorded data.
 
 ### Download Example Data
+
+First, install wget if you don't have it:
+```bash
+brew install wget
+```
+
+Then download the example data:
 ```bash
 wget --recursive --no-parent --no-host-directories --cut-dirs=2 --relative --reject="index.html*" https://real.stanford.edu/umi/data/example_demo_session/
+```
+
+**Alternative using curl** (if you prefer not to install wget):
+```bash
+# Note: For recursive downloads, wget is recommended. Install via: brew install wget
 ```
 
 ### Run SLAM Pipeline
@@ -144,7 +156,11 @@ python train.py --config-name=train_diffusion_unet_timm_umi_workspace task.datas
 ### Download Pre-trained Model
 Instead of training, you can download and use pre-trained models:
 ```bash
+# Using wget (install first: brew install wget)
 wget https://real.stanford.edu/umi/data/pretrained_models/cup_wild_vit_l_1img.ckpt
+
+# Or using curl
+curl -O https://real.stanford.edu/umi/data/pretrained_models/cup_wild_vit_l_1img.ckpt
 ```
 
 ## 🦾 Real-World Deployment (Limited Support)
@@ -212,7 +228,7 @@ For real-world deployment, we recommend:
 
 ## 🔗 Additional Resources
 
-- [Main README](../README.md) - General UMI documentation
+- [Main README](README.md) - General UMI documentation
 - [Hardware Guide](https://docs.google.com/document/d/1TPYwV9sNVPAi0ZlAupDMkXZ4CA1hsZx7YDMSmcEy6EU/edit?usp=sharing) - Hardware setup instructions
 - [SLAM Repository](https://github.com/cheng-chi/ORB_SLAM3) - ORB-SLAM3 fork for UMI
 - [SLAM Docker](https://hub.docker.com/r/chicheng/orb_slam3) - Docker image for SLAM
@@ -234,4 +250,4 @@ If you find ways to improve macOS support or work around limitations, please con
 
 ## ⚠️ Disclaimer
 
-This macOS installation guide is provided for development and testing purposes. For production deployment and real-time robot control, we strongly recommend using Ubuntu 22.04 Linux as documented in the main [README](../README.md).
+This macOS installation guide is provided for development and testing purposes. For production deployment and real-time robot control, we strongly recommend using Ubuntu 22.04 Linux as documented in the main [README](README.md).
