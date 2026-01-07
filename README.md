@@ -1,5 +1,7 @@
 # Universal Manipulation Interface
 
+> **Platform Support**: This project is primarily developed and tested on **Ubuntu 22.04**. Community support for **macOS (Intel)** is available for development and training. See [Installation](#installation) section below for platform-specific instructions.
+
 [[Project page]](https://umi-gripper.github.io/)
 [[Paper]](https://umi-gripper.github.io/#paper)
 [[Hardware Guide]](https://docs.google.com/document/d/1TPYwV9sNVPAi0ZlAupDMkXZ4CA1hsZx7YDMSmcEy6EU/edit?usp=sharing)
@@ -24,7 +26,9 @@
 <sup>3</sup>Toyota Research Institute
 
 ## 🛠️ Installation
-Only tested on Ubuntu 22.04
+
+### Ubuntu 22.04 (Recommended)
+Primary platform, tested and fully supported.
 
 Install docker following the [official documentation](https://docs.docker.com/engine/install/ubuntu/) and finish [linux-postinstall](https://docs.docker.com/engine/install/linux-postinstall/).
 
@@ -43,6 +47,18 @@ Activate environment
 $ conda activate umi
 (umi)$ 
 ```
+
+### macOS (Intel) - Community Support
+macOS installation is supported for development, dataset processing, and training (CPU-only). Real-time robot control has limited support. See [macOS Installation Guide](docs/INSTALL_MACOS.md) for detailed instructions.
+
+**Quick Start (macOS)**:
+```console
+$ brew install glfw mesa patchelf
+$ mamba env create -f conda_environment_macos.yaml
+$ conda activate umi
+```
+
+For full details, limitations, and troubleshooting, see [docs/INSTALL_MACOS.md](docs/INSTALL_MACOS.md).
 
 ## Running UMI SLAM pipeline
 Download example data
